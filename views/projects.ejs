@@ -1,0 +1,47 @@
+<!-- This is  ejs template for projects page -->
+
+
+<%include partials/header.ejs%>
+<%include partials/top_nav_bar.ejs%>
+
+<!-- Main Content on Project Page-->
+<!-- Here, a card group is used to group three card components each containing a brief description of projects-->
+
+<main>
+<div class= "card-group" style="margin-top: 8rem ;margin-left: 35rem;font-family: Georgia, 'Times New Roman', Times, serif; font: size 14px;width: 70rem;border:black; ">
+  
+  <div class="card text-dark bg-light mb-3" >
+  <img src="heart.png" class="card-img-top" alt="">
+      <div class="card-body ">
+        <h5 class ="card-title" style="text-align:center;font-weight: bold;">Heart disease prediction system</h5>
+        <br>
+        <p class="card-text" style="font-style:italic">A machine learning project which can predict the type of heart disease by comparing it to the database. We used classification techniques and weighted-ARM for accurate results.</p>
+      </div>  
+  </div>
+   
+  <div class="card text-dark bg-light mb-3 " >
+  <img src="ECOM.jpg" class="card-img-top" alt="">
+    <div class="card-body ">
+      <h5 class ="card-title" style="text-align:center;font-weight: bold;">E-commerce Website</h5>
+        <br>
+        <p class="card-text" style="font-style:italic">A machine learning project which can predict the type of heart disease by comparing it to the database. We used classification techniques and weighted-ARM for accurate results.</p>
+    
+  </div>
+  </div> 
+
+  <div class="card text-dark bg-light mb-3 " >
+    <img src="cancer.jpg" class="card-img-top" alt="">
+      <div class="card-body ">
+        <h5 class ="card-title" style="text-align:center;font-weight: bold;">Calculation of accuracy of breast cancer prediction using SVM
+          algorithm. </h5>
+        <br>
+        <p class="card-text" style="font-style:italic">Calculation of accuracy of breast cancer prediction using SVM
+          algorithm. </p>
+    </div>
+    </div> 
+
+  </div>
+</main>
+  
+<%include partials/bottom_nav_bar.ejs%>
+<%include partials/footer.ejs%>

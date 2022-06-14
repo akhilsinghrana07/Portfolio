@@ -1,0 +1,52 @@
+<!-- This is  ejs template for contact page -->
+
+
+<%include partials/header.ejs%>
+<%include partials/top_nav_bar.ejs%>
+
+<!-- Main Content on Contact Page-->
+<!-- Here, a card group is used to group two card components: 
+first card holds the contact details and 
+second card contains an interactive form which takes input from user-->
+
+<main>
+
+  <div class= "card-group" style="margin-top: 8rem ;margin-left: 40rem;font-family: Georgia, 'Times New Roman', Times, serif; font: size 14px;width: 50rem;border:black; ">
+
+  <!-- Card for Contact Details -->
+  <div class="card text-dark bg-light mb-3" >
+    <div class="card-header"style="font-family: Georgia, 'Times New Roman', Times, serif; font: size 14px;background-color:rgba(192, 125, 247, 0.678);"><b>My Contact Details</b></div>
+    <div class="card-body" style="background-image: url(contact.jpg);background-size:contain;background-repeat: no-repeat;">
+    <p class="card-text" style="font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic;">
+      <br><br><br><br><br>
+    <ul><b>Name:</b> AKhil Singh Rana </ul>
+     
+    <ul><b>Email:</b> akhilsinghrana7@gmail.com</ul>
+    <ul><b>Address:</b> Toronto, Canada</ul></p>
+    <a href="https://www.linkedin.com/in/akhil-singh-rana-a24696160/" class="btn btn-primary " role="button" style="margin-left: 9rem;margin-top: 6rem;"><b>linkedin</b></a></p>
+    
+  </div>  
+  </div>
+
+   <!-- Card for Interactive Form --> 
+  <div class="card text-dark bg-light mb-3" >
+    <div class="card-header"style="font-family: Georgia, 'Times New Roman', Times, serif; font: size 14px;background-color:rgba(192, 125, 247, 0.678);"><b>Please Provide Your Contact Details</b></div> 
+    <div class="card-body ">
+    <p> <label for="firstName" class="form-label">First Name</label>
+    <input type="fname" class="form-control" id="firstName">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input type="lname" class="form-control" id="lastName">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="email" class="form-control" id="email">
+    <label for="message" class="form-label">Your Message</label>
+    <textarea class="form-control" id="message" rows="3"></textarea>
+    <br>
+    <a href="<%= next %>" class="btn btn-primary" role="button"><b>Submit</b></a></p>
+  </div>
+  </div> 
+  </div>
+
+</main>
+  
+<%include partials/bottom_nav_bar.ejs%>
+<%include partials/footer.ejs%>
